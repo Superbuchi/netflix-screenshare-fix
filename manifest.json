@@ -11,8 +11,9 @@
     "declarativeContent"
   ],
   "host_permissions": [
-    "*://*.netflix.com/*"
-    "*://*.hbomax.com/*"
+    "*://*.netflix.com/*",
+    "*://*.hbomax.com/*",
+    "*://*.max.com/*"
   ],
   "background": {
     "service_worker": "background.js"
@@ -26,7 +27,9 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.netflix.com/*"
+        "*://*.netflix.com/*",
+        "*://*.hbomax.com/*",
+        "*://*.max.com/*"
       ],
       "js": [
         "injected.js"
