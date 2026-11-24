@@ -8,6 +8,12 @@ chrome.runtime.onInstalled.addListener(() => {
             new chrome.declarativeContent.PageStateMatcher({
                 pageUrl: { hostSuffix: '.netflix.com' },
             }),
+            new chrome.declarativeContent.PageStateMatcher({
+                pageUrl: { hostSuffix: '.max.com' },
+            }),
+            new chrome.declarativeContent.PageStateMatcher({
+                pageUrl: { hostSuffix: '.hbomax.com' },
+            }),
         ],
         actions: [new chrome.declarativeContent.ShowAction()]
     };
