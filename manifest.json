@@ -12,6 +12,7 @@
   ],
   "host_permissions": [
     "*://*.netflix.com/*"
+    "*://*.hbomax.com/*"
   ],
   "background": {
     "service_worker": "background.js"
